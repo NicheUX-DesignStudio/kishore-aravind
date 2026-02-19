@@ -1,0 +1,252 @@
+/* src/index.css*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 230 20% 4%;
+    --foreground: 0 0% 96%;
+
+    --card: 230 20% 7%;
+    --card-foreground: 0 0% 96%;
+
+    --popover: 230 20% 7%;
+    --popover-foreground: 0 0% 96%;
+
+    --primary: 355 80% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 187 100% 50%;
+    --secondary-foreground: 230 20% 4%;
+
+    --muted: 230 15% 15%;
+    --muted-foreground: 230 10% 50%;
+
+    --accent: 187 100% 50%;
+    --accent-foreground: 230 20% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 230 15% 18%;
+    --input: 230 15% 18%;
+    --ring: 355 80% 55%;
+
+    --radius: 0.5rem;
+
+    /* Semantic colors */
+    --kinetic: 355 80% 55%;
+    --systematic: 187 100% 50%;
+    --yellow-accent: 40 100% 50%;
+    --green-accent: 145 70% 42%;
+    --orange-accent: 28 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', monospace;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-wrap: balance;
+  }
+
+  .font-display {
+    font-family: 'Orbitron', monospace;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .font-tech {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+  }
+}
+
+@layer utilities {
+  .text-kinetic {
+    color: hsl(var(--kinetic));
+  }
+
+  .text-systematic {
+    color: hsl(var(--systematic));
+  }
+
+  .text-yellow {
+    color: hsl(var(--yellow-accent));
+  }
+
+  .text-green {
+    color: hsl(var(--green-accent));
+  }
+
+  .text-orange {
+    color: hsl(var(--orange-accent));
+  }
+
+  .bg-kinetic {
+    background-color: hsl(var(--kinetic));
+  }
+
+  .bg-systematic {
+    background-color: hsl(var(--systematic));
+  }
+
+  .bg-yellow {
+    background-color: hsl(var(--yellow-accent));
+  }
+
+  .bg-green {
+    background-color: hsl(var(--green-accent));
+  }
+
+  .bg-orange {
+    background-color: hsl(var(--orange-accent));
+  }
+
+  .border-kinetic {
+    border-color: hsl(var(--kinetic));
+  }
+
+  .border-systematic {
+    border-color: hsl(var(--systematic));
+  }
+
+  .border-yellow {
+    border-color: hsl(var(--yellow-accent));
+  }
+
+  .border-green {
+    border-color: hsl(var(--green-accent));
+  }
+  
+  .border-orange {
+    border-color: hsl(var(--orange-accent));
+  }
+
+  /* Scrollbar styling */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--border));
+    border-radius: 20px;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Animation utilities */
+  .animate-in {
+    animation: animate-in 0.3s ease-out;
+  }
+
+  @keyframes animate-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Glass effect */
+  .glass {
+    background: rgba(10, 10, 15, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-kinetic via-white to-systematic bg-clip-text text-transparent;
+  }
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: 'Inter var', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+
+  .overflow-safe {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  button, 
+  [role="button"], 
+  a.button-like {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .text-responsive {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+  }
+
+  .heading-responsive {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+}
+
+/* Print styles */
+@media print {
+  * {
+    color: black !important;
+    background: white !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+}
+
+.stacking-context {
+  isolation: isolate;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .backdrop-blur-md {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+}

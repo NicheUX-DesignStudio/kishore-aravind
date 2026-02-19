@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kishore Aravind | Player → Coach → Builder</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Elite performance coaching meets systematic design architecture - Bridging athletic excellence with digital craftsmanship." />
+    <meta name="keywords" content="performance coaching, design systems, athlete development, UI/UX design, digital products" />
+    <meta name="author" content="Performance Systems" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kishore Aravind | Player → Coach → Builder" />
+    <meta property="og:description" content="Elite performance coaching meets systematic design architecture" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kishorearavind.com" />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kishore Aravind | Player → Coach → Builder" />
+    <meta name="twitter:description" content="Elite performance coaching meets systematic design architecture" />
+    <meta name="twitter:image" content="/twitter-image.png" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/icon-gradient.png">
+    <link rel="apple-touch-icon" href="/icon-gradient.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon-gradient-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon-gradient-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/icon-gradient-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-gradient-180x180.png">
+    
+    <!-- Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <style>
+      @font-face {
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 400 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/orbitron/v31/yMJRMIlzdpvBhQQL_Qq7dy0.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      
+      @font-face {
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 300 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/rajdhani/v15/LDI2apCSOBg7S-QT7pasEfOqeef2kg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      
+      .font-loading {
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+    </style>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
+    
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+    </noscript>
+  </head>
+
+  <body class="font-loading">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <script>
+      document.fonts.ready.then(() => {
+        document.body.classList.remove('font-loading');
+        document.body.classList.add('fonts-loaded');
+      });
+    </script>
+  </body>
+</html>
