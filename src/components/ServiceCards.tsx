@@ -12,7 +12,7 @@ const services = [
     id: "playing" as const,
     icon: Users,
     title: "PLAYING CAREER",
-    description: "Elite athlete development programs",
+    description: "Professional athlete journey with championship victories",
     iconColor: "text-kinetic",
     titleColor: "text-kinetic",
     borderColor: "border-kinetic",
