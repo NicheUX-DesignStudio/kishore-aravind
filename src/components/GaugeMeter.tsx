@@ -43,13 +43,13 @@ const GaugeMeter = () => {
 
   const handleLeftClick = (e: React.MouseEvent) => {
     e.stopPropagation();
-    // Clicking K29 SPACE (left) should go TOWARD K29 SPACE (left/negative)
+    // Clicking K29 SQUASH (right) should go TOWARD K29 SQUASH (right/positive)
     setClickBoost(prev => prev - 15);
   };
 
   const handleRightClick = (e: React.MouseEvent) => {
     e.stopPropagation();
-    // Clicking K29 SQUASH (right) should go TOWARD K29 SQUASH (right/positive)
+    // Clicking K29 SPACE (left) should go TOWARD K29 SPACE (left/negative)
     setClickBoost(prev => prev + 15);
   };
 
@@ -128,7 +128,7 @@ const GaugeMeter = () => {
             textAnchor="middle"
             letterSpacing="1.5px"
           >
-            K29 SPACE
+            K29 SQUASH
           </text>
           
           <text 
@@ -141,24 +141,24 @@ const GaugeMeter = () => {
             textAnchor="middle"
             letterSpacing="1.5px"
           >
-            K29 SQUASH
+            K29 SPACE
           </text>
         </svg>
 
         {/* Click areas - FIXED: Clicking label makes needle go TOWARD that label */}
         <div className="absolute inset-0 flex">
-          {/* Left side - K29 SPACE - Clicking makes needle go LEFT (negative) toward K29 SPACE */}
+          {/* Right side - K29 Space - Clicking makes needle go RIGHT (positive) toward K29 Space */}
           <div 
             className="w-1/2 h-full cursor-pointer" 
             onClick={handleLeftClick}
-            aria-label="Click for K29 Space mode"
+            aria-label="Click for K29 Squash mode"
           />
           
-          {/* Right side - K29 SQUASH - Clicking makes needle go RIGHT (positive) toward K29 SQUASH */}
+          {/* Left side - K29 SQUASH - Clicking makes needle go LEFT (negative) toward K29 SQUASH */}
           <div 
             className="w-1/2 h-full cursor-pointer"
             onClick={handleRightClick}
-            aria-label="Click for K29 Squash mode"
+            aria-label="Click for K29 Space mode"
           />
         </div>
       </div>
