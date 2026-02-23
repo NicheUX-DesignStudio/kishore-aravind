@@ -8,7 +8,7 @@ const zoneContent = {
     title: "Coaching Programs",
     icon: Users,
     color: "kinetic",
-    description: "Elite athlete development systems",
+    description: "Kishore athlete development systems",
     metrics: [
       { label: "Players Developed", value: "147" },
       { label: "Win Rate", value: "92%" },

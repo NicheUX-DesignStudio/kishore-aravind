@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center px-4 pt-24 pb-12 md:pt-32 md:pb-20 relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center px-4 pt-0 pb-12 md:pt-0 md:pb-20 relative overflow-hidden -mt-[73px]"
       aria-labelledby="hero-heading"
     >
       {/* Background gradient */}
@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className="w-full max-w-4xl mx-auto text-center relative z-10">
         
         {/* Gauge Meter */}
-        <div className="mb-8 md:mb-12 px-2 mt-4">
+        <div className="mb-8 md:mb-12 px-2 mt-0">
           <GaugeMeter />
         </div>
 

@@ -12,7 +12,7 @@ const services = [
     id: "playing" as const,
     icon: Users,
     title: "PLAYING CAREER",
-    description: "Elite athlete development programs",
+    description: "Professional athlete journey with championship victories",
     iconColor: "text-kinetic",
     titleColor: "text-kinetic",
     borderColor: "border-kinetic",
@@ -22,7 +22,7 @@ const services = [
     id: "coaching" as const,
     icon: Layers,
     title: "COACHING CAREER",
-    description: "Scalable design architectures",
+    description: "High-performance coach & player development specialist",
     iconColor: "text-systematic",
     titleColor: "text-systematic",
     borderColor: "border-systematic",
@@ -42,7 +42,7 @@ const services = [
 
 const ServiceCards = ({ activeTimeline, onTimelineChange }: ServiceCardsProps) => {
   return (
-    <section id="services" className="py-16 md:py-20 lg:py-24 bg-[#0a0a0f]">
+    <section id="services" className="py-8 md:py-12 bg-[#0a0a0f]">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
           {services.map((service) => {

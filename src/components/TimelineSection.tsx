@@ -227,20 +227,6 @@ const TimelineSection = ({ activeTimeline }: TimelineSectionProps) => {
       aria-labelledby="timeline-heading"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 md:mb-20">
-          <h2 
-            id="timeline-heading"
-            className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-[0.1em] mb-3 sm:mb-4 md:mb-5 uppercase"
-          >
-            {activeTimeline === "playing" && "Playing Career Timeline"}
-            {activeTimeline === "coaching" && "Coaching Career Timeline"}
-            {activeTimeline === "designing" && "Designing Career Timeline"}
-          </h2>
-          <p className="font-tech text-xs sm:text-sm md:text-base text-muted-foreground tracking-[0.2em] uppercase">
-            From Instinct to Systems: A 15-Year Evolution
-          </p>
-        </div>
-
         <div className="relative max-w-4xl lg:max-w-6xl mx-auto">
           <div 
             className="hidden md:block absolute left-1/2 top-14 bottom-20 w-[3px] bg-gradient-to-b from-kinetic via-systematic to-green transform -translate-x-1/2" 
