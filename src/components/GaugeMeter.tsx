@@ -14,38 +14,38 @@ const GaugeMeter = () => {
             className="w-[420px] max-w-full h-auto object-contain"
           />
 
-          {/* SPACE text */}
+          {/* SQUASH text - Orbitron font, closer to logo */}
           <div 
-            className="absolute"
+            className="absolute font-display"
             style={{
-              left: "6%",
-              bottom: "18%",
-              fontFamily: "Orbitron, monospace",
+              left: "8%",
+              bottom: "12%",
               fontWeight: 900,
               letterSpacing: "2px",
               fontSize: "clamp(20px, 5vw, 36px)",
               color: "hsl(355, 80%, 55%)",
               whiteSpace: "nowrap",
+              fontFamily: "Orbitron, monospace",
             }}
           >
-            SPACE
+            SQUASH
           </div>
 
-          {/* SQUASH text */}
+          {/* SPACE text - Orbitron font, closer to logo */}
           <div 
-            className="absolute"
+            className="absolute font-display"
             style={{
-              right: "6%",
-              bottom: "18%",
-              fontFamily: "Orbitron, monospace",
+              right: "8%",
+              bottom: "12%",
               fontWeight: 900,
               letterSpacing: "2px",
               fontSize: "clamp(20px, 5vw, 36px)",
               color: "hsl(187, 100%, 50%)",
               whiteSpace: "nowrap",
+              fontFamily: "Orbitron, monospace",
             }}
           >
-            SQUASH
+            SPACE
           </div>
         </div>
       </div>
