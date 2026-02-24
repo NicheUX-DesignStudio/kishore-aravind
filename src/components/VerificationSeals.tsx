@@ -215,7 +215,7 @@ const VerificationSeals = () => {
                 </div>
               </div>
 
-              {/* Certificate Details - Only shown for Digital Journalism */}
+              {/* Certificate Details */}
               {selectedSeal.badgeType === 'degree' && selectedSeal.certificateDetails && (
                 <div>
                   <div className="flex items-center gap-1 md:gap-2 mb-1 md:mb-2">

@@ -1,28 +1,54 @@
 // src/components/GaugeMeter.tsx
+import * as React from "react";
 
 const GaugeMeter = () => {
   return (
-    <div className="relative flex justify-center items-center">
+    <div className="w-full max-w-xl lg:max-w-2xl mx-auto select-none">
+      <div className="relative px-2 sm:px-4">
+        {/* Main container with relative positioning */}
+        <div className="relative flex justify-center">
+          {/* Logo */}
+          <img
+            src="/logo.png"
+            alt="K29 Logo"
+            className="w-[420px] max-w-full h-auto object-contain"
+          />
 
-      {/* Gradient Circle */}
-      <div className="absolute w-[420px] h-[420px] rounded-full 
-        bg-gradient-to-tr from-red-500 via-purple-500 to-cyan-400 
-        blur-3xl opacity-30">
+          {/* SPACE text */}
+          <div 
+            className="absolute"
+            style={{
+              left: "6%",
+              bottom: "18%",
+              fontFamily: "Orbitron, monospace",
+              fontWeight: 900,
+              letterSpacing: "2px",
+              fontSize: "clamp(20px, 5vw, 36px)",
+              color: "hsl(355, 80%, 55%)",
+              whiteSpace: "nowrap",
+            }}
+          >
+            SPACE
+          </div>
+
+          {/* SQUASH text */}
+          <div 
+            className="absolute"
+            style={{
+              right: "6%",
+              bottom: "18%",
+              fontFamily: "Orbitron, monospace",
+              fontWeight: 900,
+              letterSpacing: "2px",
+              fontSize: "clamp(20px, 5vw, 36px)",
+              color: "hsl(187, 100%, 50%)",
+              whiteSpace: "nowrap",
+            }}
+          >
+            SQUASH
+          </div>
+        </div>
       </div>
-
-      {/* Inner Clean Circle */}
-      <div className="relative w-[380px] h-[380px] rounded-full 
-        bg-black flex items-center justify-center shadow-2xl">
-
-        {/* Logo */}
-        <img
-          src="public/LOGO - GRADIENT + WHITE.png"
-          alt="K29 Logo"
-          className="w-[70%] h-auto object-contain"
-        />
-
-      </div>
-
     </div>
   );
 };
