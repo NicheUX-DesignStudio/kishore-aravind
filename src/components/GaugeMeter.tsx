@@ -14,7 +14,7 @@ const GaugeMeter = () => {
             className="w-[420px] max-w-full h-auto object-contain"
           />
 
-          {/* SQUASH text - Orbitron font, closer to logo */}
+          {/* SQUASH text */}
           <div 
             className="absolute font-display"
             style={{
@@ -31,7 +31,7 @@ const GaugeMeter = () => {
             SQUASH
           </div>
 
-          {/* SPACE text - Orbitron font, closer to logo */}
+          {/* SPACE text */}
           <div 
             className="absolute font-display"
             style={{
