@@ -5,11 +5,11 @@ import { Award, GraduationCap, FileText, Heart, X, Calendar } from "lucide-react
 
 const seals = [
   {
-    icon: GraduationCap,
+    icon: Award,
     title: "LEVEL 2 COACH",
-    borderColor: "border-systematic",
-    iconColor: "text-systematic",
-    bgGlow: "hover:shadow-[0_0_30px_rgba(0,212,255,0.3)]",
+    borderColor: "border-kinetic",
+    iconColor: "text-kinetic",
+    bgGlow: "hover:shadow-[0_0_30px_rgba(230,57,70,0.3)]",
     description: "WSF Certified Coaching Accreditation",
     longDescription: "This Level 2 Coaching Certification represents an advanced standard of professional squash coaching. Awarded by the World Squash Federation (WSF), this qualification confirms competency in advanced technical instruction, session planning, performance analysis, and long-term player development within competitive squash environments.",
     issuer: "World Squash Federation (WSF)",
@@ -17,11 +17,11 @@ const seals = [
     badgeType: "certification"
   },
   {
-    icon: Heart,
+    icon: FileText,
     title: "MENTAL HEALTH",
-    borderColor: "border-green",
-    iconColor: "text-green",
-    bgGlow: "hover:shadow-[0_0_30px_rgba(34,197,94,0.3)]",
+    borderColor: "border-yellow",
+    iconColor: "text-yellow",
+    bgGlow: "hover:shadow-[0_0_30px_rgba(255,200,0,0.3)]",
     description: "Mental Health in Elite Sport",
     longDescription: "This certification recognises formal training in mental health awareness and support within elite sport environments. Awarded by the International Olympic Committee (IOC), the programme focuses on athlete wellbeing, psychological safety, stress management, performance pressure, and responsible coaching practices in high-performance settings.",
     issuer: "International Olympic Committee (IOC)",
@@ -29,11 +29,11 @@ const seals = [
     badgeType: "certification"
   },
   {
-    icon: FileText,
+    icon: GraduationCap,
     title: "DIGITAL JOURNALISM",
-    borderColor: "border-yellow",
-    iconColor: "text-yellow",
-    bgGlow: "hover:shadow-[0_0_30px_rgba(255,200,0,0.3)]",
+    borderColor: "border-systematic",
+    iconColor: "text-systematic",
+    bgGlow: "hover:shadow-[0_0_30px_rgba(0,212,255,0.3)]",
     description: "Vocational Degree",
     longDescription: "This degree represents formal training in digital journalism, content creation, branding, and social media strategy. The programme covers storytelling for digital platforms, media ethics, audience engagement, visual communication, and brand-focused content across modern social channels.",
     issuer: "Loyola College (Chennai)",
@@ -42,11 +42,11 @@ const seals = [
     certificateDetails: "Bachelor's of Vocational: Digital Journalism"
   },
   {
-    icon: Award,
-    title: "SQUASH UNITED",
-    borderColor: "border-kinetic",
-    iconColor: "text-kinetic",
-    bgGlow: "hover:shadow-[0_0_30px_rgba(230,57,70,0.3)]",
+    icon: Heart,
+    title: "SQUASH UNITED FOUNDATION",
+    borderColor: "border-green",
+    iconColor: "text-green",
+    bgGlow: "hover:shadow-[0_0_30px_rgba(34,197,94,0.3)]",
     description: "Squash United Foundation Member",
     longDescription: "An active member of the Squash United Foundation, a global nonprofit dedicated to using squash as a tool for social development, community engagement, and positive impact. Through this membership, I support initiatives that expand access to sport, education, and opportunity for underserved communities.",
     issuer: "Squash United Foundation",
