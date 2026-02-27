@@ -52,9 +52,8 @@ const HeroSection = () => {
           mx-auto
           px-2 sm:px-4
         ">
-          I'm Kishore Aravind — a professional squash coach and performance-driven designer.
-          I work at the intersection of elite sport, systems thinking, and visual communication
-          to build athletes, programs, and ideas with purpose.
+          K29 is a performance architecture.
+Integrating elite sport methodology, structured development systems, and strategic visual communication to create sustainable excellence.
         </p>
 
       </div>
