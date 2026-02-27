@@ -11,16 +11,16 @@ const stats = [
 
 const squashMetrics = [
   { label: "Tournament Played (State/National/International)", value: "45+", valueClass: "text-kinetic font-display" },
-  { label: "Medals (State/National/International)", value: "18", valueClass: "text-yellow font-display" },
+  { label: "Medals (State/National/International)", value: "18", valueClass: "text-kinetic font-display" },
   { label: "Workshops and Clinics", value: "1", valueClass: "text-kinetic font-display" },
-  { label: "Private Coaching Hours", value: "577 hrs", valueClass: "text-yellow font-display" },
+  { label: "Private Coaching Hours", value: "577 hrs", valueClass: "text-kinetic font-display" },
 ];
 
 const designMetrics = [
   { label: "System Design Available", value: "YES", valueClass: "text-systematic font-display" },
-  { label: "Projects Delivered", value: "50+", valueClass: "text-green font-display" },
+  { label: "Projects Delivered", value: "50+", valueClass: "text-systematic font-display" },
   { label: "Design Components Built", value: "250+", valueClass: "text-systematic font-display" },
-  { label: "Lives Impacted", value: "30+", valueClass: "text-green font-display" },
+  { label: "Lives Impacted", value: "30+", valueClass: "text-systematic font-display" },
 ];
 
 const ImpactDashboard = () => {
