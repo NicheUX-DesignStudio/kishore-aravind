@@ -1,4 +1,3 @@
-// TEST CHANGE - DELETE LATER
 // src/components/HeroSection.tsx
 import GaugeMeter from "./GaugeMeter";
 
